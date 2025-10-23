@@ -1,6 +1,6 @@
-from flask import Flask, render_template, request
-from flask_socketio import SocketIO, join_room, leave_room, emit
-import json
+from flask import Flask, render_template
+from flask_socketio import SocketIO, emit
+import os
 import shogi
 
 app = Flask(__name__)
@@ -49,4 +49,5 @@ def judge_promote(data):
 
 
 if __name__ == "__main__":
-    socketio.run(app, host="127.0.0.1", port=5000, debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
