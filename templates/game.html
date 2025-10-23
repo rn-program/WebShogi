@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>対局開始</title>
+  <link rel="stylesheet" href="/static/css/game.css">
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+</head>
+
+<body>
+  <!-- 右上のボタンバー -->
+  <div id="button-bar">
+    <button class="top-btn" onclick="reload_page()">🔄 リセット</button>
+    <button class="top-btn">💾 セーブ</button>
+    <button class="top-btn">📜 棋譜</button>
+    <button class="top-btn">🔁 盤反転</button>
+  </div>
+
+  <div id="board-container">
+    <div id="white-captures" class="captures"></div>
+    <div id="shogi-board"></div>
+    <div id="black-captures" class="captures"></div>
+  </div>
+
+  <script src="/static/js/game.js"></script>
+</body>
+
+</html>
