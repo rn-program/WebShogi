@@ -1,4 +1,4 @@
 Flask==2.3.2
-gunicorn==21.2.0
-flask_socketio==6.6.2
+flask_socketio==5.5.1
 eventlet==0.33.3
+gunicorn==21.2.0
