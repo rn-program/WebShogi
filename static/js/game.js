@@ -78,7 +78,7 @@ function getHandsFromSfen(sfen) {
 
 // --- 駒名から画像パスを返す ---
 function sfenToImg(piece) {
-    return "/static/image/" + (pieceImgMap[piece] || "missing.png");
+    return staticBaseUrl + (pieceImgMap[piece] || "missing.png");
 }
 
 // --- 盤面座標 → USI形式文字列に変換 ---
